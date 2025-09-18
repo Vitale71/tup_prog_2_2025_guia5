@@ -15,7 +15,7 @@ namespace Ejercicio3.Models
         {
             Regex regex = new Regex(@"<importe>([,\d]+?)<importe>", RegexOptions.IgnoreCase);
             Match match = regex.Match(xml);
-            if (match.Groups.Count != 2)
+            if (match.Success==true &&match.Groups.Count != 2)
             {
                 return false;
             }
