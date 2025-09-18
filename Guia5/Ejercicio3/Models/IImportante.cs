@@ -2,6 +2,6 @@
 {
     interface IImportante
     {
-        public bool importar(string xml);
+        public bool Importar(string xml);
     }
 }
